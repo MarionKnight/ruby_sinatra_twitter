@@ -1,0 +1,29 @@
+source :rubygems
+
+# PostgreSQL driver
+gem 'pg'
+
+# Sinatra driver
+gem 'sinatra'
+gem 'sinatra-contrib'
+
+gem 'omniauth-twitter'
+gem 'twitter'
+# not sure we need this; comment out for now
+# gem 'twitter'
+
+# Use Thin for our web server
+gem 'thin'
+
+gem 'activesupport'
+gem 'activerecord'
+
+gem 'rake'
+
+gem 'shotgun'
+
+group :test do
+  gem 'faker'
+  gem 'rspec'
+  gem 'debugger'
+end
